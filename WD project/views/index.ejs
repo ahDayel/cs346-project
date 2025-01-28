@@ -1,0 +1,33 @@
+<div class="author" dir="rtl">
+  <h1 class="author__heading">وجهتك الأولى لوصفات رائعه ولذيذة</h1>
+   <h3>نجمع لك وصفات امهر الطباخين في العالم</h3>
+</div>
+
+<img src="/img/steak.png" alt="image of steak" class="hero-image" width="981" height="528">
+
+<section class="articles" dir="rtl">
+  <h2 class="articles__heading">الوصفات</h2>
+
+  <ul class="article-ul">
+    <% data.forEach(post => { %>
+      <li>
+        <a href="/post/<%= post._id %>">
+          <span><%= post.title %></span>
+          <span class="article-list__date"><%= post.createdAt.toDateString() %></span>
+        </a>
+      </li>
+      <hr style="background-color: aliceblue;">
+    <% }) %>
+  </ul>
+
+
+  <% if (nextPage !== null) { %>
+    <a href="/?page=<%= nextPage %>" class="pagination">&lt; View Older Posts</a>
+  <% } %>
+ 
+
+  
+
+
+
+</section>
