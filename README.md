@@ -55,15 +55,27 @@ This is a recipe-sharing website where master-class chefs can post their recipes
 
 
 ## Screenshots
-(Add screenshots of the website here)
+![main page](screenshots/main.png)
+![recipe](screenshots/recipe.png)
+![register page](screenshots/register.png)
+![login page](screenshots/login.png)
+![dashboard](screenshots/dashboard.png)
+![new post](screenshots/new-post.png)
+![edit post](screenshots/edit-post.png)
+
+
+
+
+
+
 
 ## student
 ```
 this project was made for cs-346 in Imam Mohammad Ibn Saud Islamic University 
 students:
-ahmed aldayel
-Abdurabu Saleh Abdurabu Ali 
-Abdulaziz Jamal Alyasin 
-Moayad mohammed Fagihi
+ahmed aldayel 444001776
+Abdurabu Saleh Abdurabu Ali 443018831
+Abdulaziz Jamal Alyasin 442016211
+Moayad mohammed Fagihi 441015220
 
 
