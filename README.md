@@ -55,7 +55,19 @@ This is a recipe-sharing website where master-class chefs can post their recipes
 
 
 ## Screenshots
-(Add screenshots of the website here)
+![main page](screenshots/main.png)
+![recipe](screenshots/recipe.png)
+![register page](screenshots/register.png)
+![login page](screenshots/login.png)
+![dashboard](screenshots/dashboard.png)
+![new post](screenshots/new-post.png)
+![edit post](screenshots/edit-post.png)
+
+
+
+
+
+
 
 ## student
 ```
