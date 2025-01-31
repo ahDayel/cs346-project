@@ -98,11 +98,10 @@ router.post('/search', async (req, res) => {
     let searchTerm = req.body.searchTerm.trim();
     let data = [];
     
-    if (searchTerm) {
-      data = await Post.find({
-        title: searchTerm
-      });
-    }
+    data = await Post.find({
+      title: { $regex: searchTerm, $options: 'i' }
+    });
+    
 
     res.render("search", { data, locals, currentRoute: '/search' });
 
