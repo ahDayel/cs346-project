@@ -1,0 +1,36 @@
+<!-- <%- include('../partials/header') %> -->
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow">
+                <div class="card-body">
+                    <div class="admin-title">
+                        <h2 class="text-center mb-4">تسجيل الدخول للادمن</h2>
+                    </div>
+
+                    <div class="admin-form">
+                        <form action="/signin" method="POST">
+                            <div class="form-group">
+                                <label for="email">البريد الإلكتروني</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">كلمة المرور</label>
+                                <input type="password" class="form-control" id="password" name="password" required>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn">تسجيل الدخول</button>
+                            </div>
+                            <!-- <div class="admin-form-links">
+                                <p>ليس لديك حساب؟ <a href="/register">سجل الآن</a></p>
+                            </div> -->
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <%- include('../partials/footer') %> -->

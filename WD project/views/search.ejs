@@ -3,17 +3,20 @@
 </div>
 
 <section class="articles" dir="rtl">
-
-  <ul class="article-ul">
-    <% data.forEach(post => { %>
-      <li>
-        <a href="/post/<%= post._id %>">
-          <span><%= post.title %></span>
-          <span class="article-list__date"><%= post.createdAt.toDateString() %></span>
-        </a>
-      </li>
-    <% }) %>
-  </ul>
-
-
+  <% if (data.length > 0) { %>
+    <ul class="article-ul">
+      <% data.forEach(post => { %>
+        <li>
+          <a href="/post/<%= post._id %>">
+            <span><%= post.title %></span>
+            <span class="article-list__date"><%= post.createdAt.toDateString() %></span>
+          </a>
+        </li>
+      <% }) %>
+    </ul>
+  <% } else { %>
+    <div class="no-results">
+      <p>عذراً، لم يتم العثور على وصفة</p>
+    </div>
+  <% } %>
 </section>

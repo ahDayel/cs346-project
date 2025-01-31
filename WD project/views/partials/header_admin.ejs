@@ -1,5 +1,5 @@
-<header class="header">
-  <a href="/" class="header__logo">صفحة الادمن</a>
+<header class="header_admin">
+  <label class="header__admin__logo">صفحة الادمن</label>
 
   <nav class="header__nav">
     <ul>
@@ -15,9 +15,11 @@
   </nav>
 
   <div class="header__button">
+    <% if (currentRoute !== '/signin' && currentRoute !== '/register') { %>
     <a href="/logout">
-      Logout
+      تسجيل الخروج
     </a>
+    <% } %>
   </div>
 
 </header>
